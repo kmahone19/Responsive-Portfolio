@@ -52,26 +52,6 @@ h3 {
   font-size: 22px;
 }
 
-@media screen and (max-width: 768px)
-{
-  .main-container{}
-}
-
-@media screen and (max-width: 980px)
-{
-  .main-container{} 
-}
-
-@media screen and (max-width: 640px)
-{
-  .main-container{
-    width: 100%;
-  }
-
-  .auth-image{
-    width: 100%;
-  }
-}
 /* header */
 
 #masthead {
@@ -236,4 +216,63 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media screen and (max-width: 980px){
+  #main-container{
+    float: left;
+    width: 70%;
+    padding-bottom: 100px
+  }
+
+  nav {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  
+  .auth-image{
+    float: left;
+    width: 50%;
+    height: auto;
+  }
+  #main-container{
+    float: none;
+    width: 90%;
+  }
+  .work{
+    float: left;
+    width: 40%; 
+    
+  }
+  nav {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 640px){
+  header{
+    position: fixed;
+  }
+
+  .auth-image{
+    float: none;
+    width: 100%;
+  }
+  #main-container{
+    float: none;
+    width: 90%;
+  }
+
+  .work{
+    float: none;
+    width: 90%; 
+  }
+ 
+  #logo{
+    width: 100%;
+    text-align: center;
+   
+  }
 }
